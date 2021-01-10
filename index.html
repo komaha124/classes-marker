@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Реализовать класс, описывающий простой маркер. В классе должны быть следующие компоненты::</p>
+        <ul>
+            <li>поле, которое хранит цвет маркера;</li>
+            <li>поле, которое хранит количество чернил в маркере (в процентах);</li>
+            <li>метод для печати (метод принимает строку и выводит текст соответствующим цветом; текст выводится до тех пор, пока в маркере есть чернила; один не пробельный символ – это 0,5% чернил в маркере).</li>
+        </ul>
+        <p>Реализовать класс, описывающий заправляющийся маркер, унаследовав его от простого маркера и добавив метод для заправки маркера.</p>
+    </div>
+    <div class="block">
+    <p>Маркер без подзаправки</p>
+    <input type="text" onkeyup="WriteGreen()" placeholder="Напише мне что нибудь" id="TextMarker">
+    <p id="content"></p>
+
+    <p>Новый маркер</p>
+    <input type="text" onkeyup="WriteNewGreen()" placeholder="Напише мне что нибудь" id="TextMarker2">
+    <button onclick="fill()">Дозаправка</button>
+    <p id="content2"></p>
+    </div>
+    <script src="js/main.js"></script>
+    <style>
+    body{
+    background-color: #d0d0ff;
+    }
+    div{
+    width: 800px;
+    margin: 0 auto;
+    }
+    .block{
+    width: 500px; 
+    }
+    </style>
+</body>
+</html>
